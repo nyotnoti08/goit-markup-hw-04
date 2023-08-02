@@ -399,6 +399,21 @@ body {
   background-color: var(--navyblue);
 }
 
+.page-footer > .container {
+  display: flex;
+  justify-content: left;
+}
+
+.logo-container {
+  margin-right: 150px;
+}
+
+.footer-section-title {
+  line-height: 1.17;
+  color: var(--white);
+  font-weight: 700;
+}
+
 .page-footer {
   padding: 60px 0;
 }
