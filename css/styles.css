@@ -381,6 +381,14 @@ body {
   background: var(--cloud, #f4f4fd);
 }
 
+.icon-customer-container > .icon {
+  fill: #8e8f99;
+}
+
+.icon-customer-container > .icon:hover {
+  fill: var(--ocean);
+}
+
 .list-customers {
   display: flex;
   align-items: center;
