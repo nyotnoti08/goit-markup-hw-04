@@ -171,7 +171,8 @@ body {
   font-weight: 400;
 }
 
-.icon-container {
+/*.icon-container*/
+.icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,6 +182,13 @@ body {
   margin: auto;
   border-radius: 4px;
   background: var(--cloud, #f4f4fd);
+}
+
+.instagram,
+.linkedin,
+.twitter,
+.facebook {
+  fill: var(--cloud);
 }
 
 .what-we-do {
@@ -214,21 +222,29 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/*socmed-icon-container
 .socmed-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   padding: auto;
-}
+}*/
 
+/*
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
+}*/
+
+.social-team {
+  gap: 24px;
+  display: flex;
+  justify-content: center;
 }
 
-.icon-list {
+.social-footer {
   gap: 24px;
   display: flex;
   justify-content: center;
@@ -263,7 +279,7 @@ body {
   margin-left: auto;
 }
 
-.bg-hero {
+.hero {
   /*background-color: var(--navyblue);*/
   background-image: linear-gradient(
       180deg,
@@ -356,11 +372,6 @@ body {
   font-weight: 400;
 }
 
-.section-customers {
-  height: 350px;
-  background-color: var(--white);
-}
-
 .section-customers > .container {
   margin-top: 100px;
   align-items: center;
@@ -369,11 +380,10 @@ body {
   height: 200px;
 }
 
-.icon-customer-container {
+.partners .item {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cornflower);
   width: 168px;
   height: 88px;
   margin: auto;
@@ -381,15 +391,15 @@ body {
   background: var(--cloud, #f4f4fd);
 }
 
-.icon-customer-container > .icon {
+.partners .item .icon {
   fill: #8e8f99;
 }
 
-.icon-customer-container > .icon:hover {
+.partners .item .icon:hover {
   fill: var(--ocean);
 }
 
-.list-customers {
+.partners {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -403,7 +413,11 @@ body {
   border-top: 0;
 }
 
-.page-footer.bg-footer {
+.footer {
+  display: flex;
+}
+
+.page-footer {
   background-color: var(--navyblue);
 }
 
@@ -412,11 +426,11 @@ body {
   justify-content: left;
 }
 
-.logo-container {
+.footer-address {
   margin-right: 150px;
 }
 
-.footer-section-title {
+.footer-heading {
   line-height: 1.17;
   color: var(--white);
   font-weight: 700;
