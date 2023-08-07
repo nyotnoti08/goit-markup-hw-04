@@ -7,6 +7,7 @@
   --slate: #434455;
   --white: #fff;
   --green: #31d0aa;
+  --lightslate: #8e8f99;
 }
 
 h1,
@@ -122,7 +123,6 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  justify-content: center;
 }
 
 .menu,
@@ -172,14 +172,14 @@ body {
 }
 
 /*.icon-container*/
-.icon {
+.benefits .icon {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--cornflower);
   width: 264px;
   height: 112px;
-  margin: auto;
+  margin-bottom: 8px;
   border-radius: 4px;
   background: var(--cloud, #f4f4fd);
 }
@@ -222,22 +222,6 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*socmed-icon-container
-.socmed-icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding: auto;
-}*/
-
-/*
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
-
 .social-team {
   gap: 24px;
   display: flex;
@@ -245,12 +229,13 @@ body {
 }
 
 .social-footer {
-  gap: 24px;
+  gap: 16px;
+  padding-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.icon-item .link {
+.social-team .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,13 +247,27 @@ body {
   color: #f4f4fd;
 }
 
-.icon-item .icon {
+.icon-item {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  background-color: var(--iris);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #f4f4fd;
   fill: currentColor;
 }
 
 .icon-item .link:hover,
 .icon-item .link:focus {
-  background-color: var(--green);
+  background-color: var(--ocean);
 }
 
 .studio {
@@ -290,6 +289,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 200px 0;
+  text-align: center;
+  height: 600px;
 }
 
 .nav-menu .page,
@@ -331,11 +333,6 @@ body {
 .contacts-menu .contact:hover,
 .contacts-menu .contact:focus {
   color: var(--iris);
-}
-
-.hero {
-  padding: 200px 0;
-  text-align: center;
 }
 
 .hero-title {
@@ -381,22 +378,29 @@ body {
 }
 
 .partners .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 168px;
   height: 88px;
-  margin: auto;
+}
+
+.partners .link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--lightslate);
   border-radius: 4px;
-  background: var(--cloud, #f4f4fd);
+  justify-content: center;
+  align-items: center;
+  color: var(--lightslate);
 }
 
 .partners .item .icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
-.partners .item .icon:hover {
-  fill: var(--ocean);
+.partners .link:hover,
+.partners .link:focus {
+  color: var(--ocean);
+  border-color: var(--ocean);
 }
 
 .partners {
@@ -415,29 +419,30 @@ body {
 
 .footer {
   display: flex;
-}
-
-.page-footer {
-  background-color: var(--navyblue);
-}
-
-.page-footer > .container {
-  display: flex;
-  justify-content: left;
+  flex-wrap: wrap;
+  margin-top: -12px;
+  margin-left: -50px;
+  align-items: baseline;
 }
 
 .footer-address {
   margin-right: 150px;
 }
 
+.footer-block {
+  margin-top: 12px;
+  margin-left: 123px;
+}
+
 .footer-heading {
   line-height: 1.17;
   color: var(--white);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .page-footer {
-  padding: 60px 0;
+  padding: 60px 0 60px 60px;
+  background-color: var(--navyblue);
 }
 
 .studio-footer {
@@ -489,7 +494,6 @@ body {
   font-size: 16px;
 }
 
-/* I PUT CHANGES HERE */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -501,6 +505,12 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.project-card:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .filters {
